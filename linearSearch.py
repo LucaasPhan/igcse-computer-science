@@ -14,4 +14,4 @@ def linearSearch(items, itemToFind):
     else:
         return print("Item not found")
 
-linearSearch(items, itemToFind)~
+linearSearch(items, itemToFind)
