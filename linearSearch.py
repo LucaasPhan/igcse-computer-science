@@ -4,14 +4,14 @@ itemToFind = input("What food?\n").lower()
 def linearSearch(items, itemToFind):
     i = 0
     found = False
-    while found == False and i < len(items):
-        if items[i] == itemToFind:
+    while not found and i < len(items):
+        if itemToFind == items[i]:
             found = True
         else:
-            i = i + 1
-    if found == True:
+            i += 1
+    if found:
         return print("Item found in the menu at the position", i+1)
     else:
         return print("Item not found")
 
-linearSearch(items, itemToFind)
+linearSearch(items, itemToFind)~
